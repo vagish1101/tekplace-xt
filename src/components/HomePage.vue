@@ -1,7 +1,5 @@
 <template>
-  <div class="container-fluid">
-  ...
-</div>
+    <Header/>
 </template>
 
 <script>

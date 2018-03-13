@@ -1,5 +1,15 @@
 <template>
-    <img src="../assets/TEKsystems_Logo.png" alt="">
+  <div class="row">
+    <img class= "col-2 logo" src="../assets/TEKsystems_Logo.png" alt="">
+    <input type="text" name="" class="col-4">
+    <div class="col-6">
+      <form action="">
+        <input type="text" name="" id="">
+        <input type="password" name="" id="">
+        <input type="submit" name="" id="" value="Login">
+      </form>
+    </div>
+  </div>
 </template>
 
 <script>
