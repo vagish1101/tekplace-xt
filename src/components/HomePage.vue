@@ -1,14 +1,20 @@
 <template>
-  <Header/>
+  <div class="container-fluid">
+  ...
+</div>
 </template>
 
 <script>
+import Header from './Header'
 export default {
-  name: 'HelloWorld',
+  name: 'HomePage',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components: {
+    'Header': Header
   }
 }
 </script>

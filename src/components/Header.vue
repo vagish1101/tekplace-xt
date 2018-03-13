@@ -1,15 +1,11 @@
 <template>
-  <Header/>
+    <img src="../assets/TEKsystems_Logo.png" alt="">
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  }
+  name: 'Header',
+  data () {}
 }
 </script>
 
