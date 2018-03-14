@@ -34,7 +34,7 @@ export default {
   }
   .header-wrap {
     padding: 10px 20px 30px;
-    margin: 10px 0;
+    margin: 10px 0 0;
     border-bottom: 1px solid #d2c7c7;
     input[type="text"], input[type="password"] {
         line-height: 20px;
@@ -57,8 +57,8 @@ export default {
             font-size: 12px;
         }
         span {
-            left: 30px;
-            padding: 10px 10px 8px 7px;
+            left: 34px;
+            padding: 5px 9px 9px 7px;
             background: #ef9525;
             color: white;
             border-top-left-radius: 7px;

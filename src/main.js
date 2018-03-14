@@ -5,6 +5,10 @@ import App from './App'
 import router from './router'
 import './assets/sass/_custom.scss'
 
+import VueMaterial from 'vue-material'
+import 'vue-material/dist/vue-material.min.css'
+
+Vue.use(VueMaterial)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
