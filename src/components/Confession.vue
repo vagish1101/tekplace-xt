@@ -22,26 +22,12 @@
                     <div class='confess-header rowminus'>
                         <div class='row'>
                             <div class='col-3'><h2>All Confessions</h2></div>
-                            <div class='offset-3'></div>
-                            <div class='col-6'>
-                                <span class="fit">Filter By</span>
-                                <div class="styled-select slate">
-                                    <select>
-                                        <option>Select Categories</option>
-                                        <option>The second option</option>
-                                    </select>
-                                </div>
-                                 <div class="styled-select slate allselect">
-                                    <select name='' class='all'>
-                                        <option value=''>All</option>
-                                    </select>
-                                 </div>
-                            </div>
+                            <div class='offset-9'></div>
                         </div>
                     </div>
                     <div class='confess-list'>
                         <article class= "row"  v-for='(data, index) in DataList' :key='index'>
-                            <div class='col-2'><img  src= '../assets/user1.jpg'  alt=''></div>
+                             <div class='col-2'><img  v-bind:src= 'data.img'  alt=''></div>
                             <div class='col-6'>
                                 <h3>{{data.title}}</h3>
                                 <p>Submited By @<b>{{data.author}}</b> &nbsp; {{data.Posted}}</p>
@@ -94,7 +80,7 @@ export default {
   methods: {
     created: function () {
       let vm = this
-      axios.get(`https://api.myjson.com/bins/i2vb9`)
+      axios.get(`https://api.myjson.com/bins/zj3tp`)
         .then(response => {
           vm.DataList = response.data.List
         })
@@ -205,34 +191,34 @@ export default {
     .rowminus {
         margin: 0 -15px;
     }
-    .styled-select {
-        background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
-        overflow: hidden;
-    }
+    // .styled-select {
+    //     background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+    //     overflow: hidden;
+    // }
 
-    .styled-select select {
-        background: transparent;
-        border: none;
-        font-size: 13px;
-        height: 34px;
-        width: 228px;
-        padding: 5px !important; /* If you add too much padding here, the options won't show in IE */
-        border: 1px solid #ccc;
+    // .styled-select select {
+    //     background: transparent;
+    //     border: none;
+    //     font-size: 13px;
+    //     height: 34px;
+    //     width: 228px;
+    //     padding: 5px !important; /* If you add too much padding here, the options won't show in IE */
+    //     border: 1px solid #ccc;
 
-    }
-    .all {
-        width: 100px !important;
-    }
-    .styled-select.slate {
-        background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat right center;
-        height: 34px;
-        width: 200px;
-        display: inline-block;
-        margin-right: 15px;
-    }
-    .allselect {
-        width: 80px !important;
-    }
+    // }
+    // .all {
+    //     width: 100px !important;
+    // }
+    // .styled-select.slate {
+    //     background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat right center;
+    //     height: 34px;
+    //     width: 200px;
+    //     display: inline-block;
+    //     margin-right: 15px;
+    // }
+    // .allselect {
+    //     width: 80px !important;
+    // }
     .fit {
         margin-right: 10px;
         position: relative;

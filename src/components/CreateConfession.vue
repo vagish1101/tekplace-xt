@@ -16,7 +16,7 @@
                             <h3>Recent Posts</h3>
                             <div class="recent">
                                 <article class= "row"  v-for='(data, index) in DataList' :key='index'>
-                                    <div class='col-4'><img  src= '../assets/user1.jpg'  alt=''></div>
+                                    <div class='col-4'></div>
                                     <div class='col-8'>
                                         <h4>{{data.title}}</h4>
                                         {{data.Posted}}
