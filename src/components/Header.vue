@@ -1,13 +1,15 @@
 <template>
   <div class="header-wrap">
-    <img class= "align-left logo" src="../assets/TEKsystems_Logo.png" alt="">
+    <router-link to="/">
+        <img class= "align-left logo" src="../assets/TEKsystems_Logo.png" alt="">
+    </router-link>
     <span class="search">
         <span class="glyphicon glyphicon-search"></span>
         <input type="search" name="" placeholder="Enter Keyword" >
     </span>
     <div class="login">
       <form action="">
-        <input type="text" name="" id="" placeholder="Username">
+        <input type="text"  placeholder="Username">
         <input type="password" name="" id=""  placeholder="Password">
         <input type="submit" name="" class="btn btn-dark" value="Login">
       </form>

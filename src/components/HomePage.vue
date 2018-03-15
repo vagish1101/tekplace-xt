@@ -1,12 +1,10 @@
 <template>
   <div class="body-wrap">
-    <Header/>
     <Confession />
   </div>
 </template>
 
 <script>
-import Header from './Header'
 import Confession from './Confession'
 export default {
   name: 'HomePage',
@@ -16,7 +14,6 @@ export default {
     }
   },
   components: {
-    'Header': Header,
     'Confession': Confession
   }
 }

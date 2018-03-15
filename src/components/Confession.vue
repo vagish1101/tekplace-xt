@@ -5,8 +5,9 @@
                 <aside>
                     <div class='makeconfess'>
                         <button type='button' class='btn btn-primary flatbutton'>
+                             <router-link to="/create">
                             <span class='glyphicon glyphicon-plus'></span>
-                            &nbsp; Your Confession</button>
+                            &nbsp; Your Confession</router-link></button>
                     </div>
                     <ul>
                         <li><span class='glyphicon glyphicon-question-sign'></span>Confession</li>
@@ -75,7 +76,6 @@
                          <p>Members</p>
                         <h2>110</h2>
                     </div>
-                   
                 </div>
             </div>
         </div>
@@ -117,6 +117,10 @@ export default {
         margin: 29px 0;
         padding: 11px 28px;
         font-weight: bold;
+        a {
+            color:white;
+            text-decoration: none;
+        }
     }
     aside {
         .makeconfess {
