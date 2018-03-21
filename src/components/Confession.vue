@@ -29,7 +29,9 @@
                         <article class= "row"  v-for='(data, index) in DataList' :key='index'>
                              <div class='col-2'><img  v-bind:src= 'data.img'  alt=''></div>
                             <div class='col-6'>
-                                <h3>{{data.title}}</h3>
+                                <router-link :to="{ name: 'confessdetail', params: { id: data.id }}">
+                                    <h3>{{data.title}}</h3>
+                                </router-link>
                                 <p>Submited By @<b>{{data.author}}</b> &nbsp; {{data.Posted}}</p>
                             </div>
                             <div class='col-4'>
@@ -80,7 +82,7 @@ export default {
   methods: {
     created: function () {
       let vm = this
-      axios.get(`https://api.myjson.com/bins/zj3tp`)
+      axios.get(`https://api.myjson.com/bins/15mi23`)
         .then(response => {
           vm.DataList = response.data.List
         })
